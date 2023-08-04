@@ -22,7 +22,7 @@
 
   <div class="text-4xl font-semibold mb-2 text-center">
     <h2 class = "welcome-section">Welcome</h2>
-    <h2 class = "gradient-text "> ABOARD</h2>
+    <h2 class = "gradient-text "> Aboard</h2>
 </div>
 <div>
     <p class="text-lg text-center">Welcome to our Portfolio Management dashboard,
@@ -48,7 +48,7 @@
     
     }
     .gradient-text {
-        background: linear-gradient(to right, #13033e,#111ed4, #ffc507, #5134016a);    -webkit-background-clip: text;
+        background: linear-gradient(to right,  #13033e,#111ed4, #ffc507, #5134016a);    -webkit-background-clip: text;
     color: transparent;
     font-size: 2rem; 
     font-weight: 800;
