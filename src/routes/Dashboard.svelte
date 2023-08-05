@@ -7,27 +7,43 @@
 </script>
 
 <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-300 flex justify-around py-2">
-  <a 
-  href="/" class="flex flex-col items-center text-gray-500 hover:text-yellow-500  
-  {activeTab === 'dashboard' ? 'active-link' : ''}
-  on:click={() => setActive('dashboard')}">
+  <a
+    href="/"
+    class="flex flex-col items-center text-gray-500 {activeTab === 'dashboard' ? 'active-link' : ''}"
+    on:click={() => setActive('dashboard')}
+  >
     <Icon icon="ic:round-dashboard" class="text-xl mb-1" />
-
     Dashboard
   </a>
-  <a href="/property" class="flex flex-col items-center text-gray-500 hover:text-yellow-500">
-    <Icon icon="bx:buildings"class="text-xl mb-1" />
+  <a
+    href="/"
+    class="flex flex-col items-center text-gray-500 {activeTab === 'properties' ? 'active-link' : ''}"
+    on:click={() => setActive('properties')}
+  >
+    <Icon icon="bx:buildings" class="text-xl mb-1" />
     Properties
   </a>
-  <a href="/analytics" class="flex flex-col items-center text-gray-500 hover:text-yellow-500">
+  <a
+    href="/"
+    class="flex flex-col items-center text-gray-500 {activeTab === 'analytics' ? 'active-link' : ''}"
+    on:click={() => setActive('analytics')}
+  >
     <Icon icon="gridicons:line-graph" class="text-xl mb-1" />
     Analytics
   </a>
-  <a href="/financials" class="flex flex-col items-center text-gray-500 hover:text-yellow-500">
+  <a
+    href="/"
+    class="flex flex-col items-center text-gray-500 {activeTab === 'financials' ? 'active-link' : ''}"
+    on:click={() => setActive('financials')}
+  >
     <Icon icon="iconoir:credit-cards" class="text-xl mb-1" />
     Financials
   </a>
-  <a href="/notifications" class="flex flex-col items-center text-gray-500 hover:text-yellow-500">
+  <a
+    href="/"
+    class="flex flex-col items-center text-gray-500 {activeTab === 'notifications' ? 'active-link' : ''}"
+    on:click={() => setActive('notifications')}
+  >
     <Icon icon="tabler:bell" class="text-xl mb-1" />
     Notifications
   </a>
@@ -35,7 +51,6 @@
 
 <style>
   .active-link {
-    color: #eaa91b; 
-   
+    color: #eaa91b;
   }
 </style>
